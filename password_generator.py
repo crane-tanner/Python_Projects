@@ -13,7 +13,7 @@ import secrets
 import string
 
 
-def create_pw(pw_length=12):
+def create_pw(pw_length=15):
    letters = string.ascii_letters
    digits = string.digits
    special_chars = string.punctuation
@@ -28,7 +28,7 @@ def create_pw(pw_length=12):
            pwd += ''.join(secrets.choice(alphabet))
 
        if (any(char in special_chars for char in pwd) and
-               sum(char in digits for char in pwd) >= 2):
+               sum(char in digits for char in pwd) >= 1):
            pw_strong = True
 
    return pwd
