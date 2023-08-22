@@ -24,9 +24,12 @@
 # So donuts(5) returns 'Number of donuts: 5'
 # and donuts(23) returns 'Number of donuts: many'
 def donuts(count):
-  # +++your code here+++
-  return
-
+    str = 'Number of donuts: many' 
+    str1 = 'Number of donuts: ' + str(count)
+    if(count < 10):
+         return str1
+    else:
+        return str
 
 # B. both_ends
 # Given a string s, return a string made of the first 2
