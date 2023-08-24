@@ -37,28 +37,30 @@ if player_choice == 0:
     print(rock)
     print(r_p_s[computer_choice])
     if player_choice == computer_choice:
-      print("It's a draw!")
+        print("It's a draw!")
     elif computer_choice == 1:
-      print("Paper beats rock. You lose!")
+        print("Paper beats rock. You lose!")
     else:
-      print("Rock beats scissors. You win!")
+        print("Rock beats scissors. You win!")
 
-if player_choice == 1:
+elif player_choice == 1:
     print(paper)
-    print( r_p_s[computer_choice])
+    print(r_p_s[computer_choice])
     if player_choice == computer_choice:
-      print("It's a draw!")
+        print("It's a draw!")
     elif computer_choice == 0:
-      print("Paper b)eats rock. You win!")
+        print("Paper beats rock. You win!")
     else:
-      print("Scissors beats paper. You lose!")
+        print("Scissors beats paper. You lose!")
 
-if player_choice == 2:
+elif player_choice == 2:
     print(scissors)
     print(r_p_s[computer_choice])
     if player_choice == computer_choice:
-      print("It's a draw!")
-    elif computer_choice == 1:
-      print("Scissors beats paper. You win!")
+        print("It's a draw!")
+    elif computer_choice == 0:
+        print("Rock beats scissors. You lose!")
     else:
-      print("Rock beats scissors. You lose!")
+        print("Scissors beats paper. You win!")
+    
+else: print("You entered a number other than 0, 1, or 2. Try again!")
