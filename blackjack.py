@@ -1,5 +1,5 @@
 import random 
-from replit import clear
+#from replit import clear
 
 
 def blackjack():
@@ -54,7 +54,7 @@ def blackjack():
     computer_cards.append(deal_card())
     
   while not is_game_over:
-    user_score =calculate_score(user_cards)
+    user_score = calculate_score(user_cards)
     computer_score = calculate_score(computer_cards)
     print(f"Your cards are: {user_cards}. Current score: {user_score}")
     print(f"The computer's first card is: {computer_cards[0]}")
@@ -74,12 +74,10 @@ def blackjack():
   print(f"Your final hand: {user_cards}, final score: {user_score}")
   print(f"Computer's final hand: {computer_cards}, final score: {computer_score}")
   print(compare(user_score, computer_score))
-  answer = input("Do you want to restart the game? Type 'y' or 'n'.")
-  if answer == 'y':
-    clear()
+  answer = input("Do you want to restart the game? Type 'yes' or 'no'.")
+  if answer == 'yes':
+   #clear()
     blackjack()
-  else: 
-    exit(0)
 
 
 blackjack()
