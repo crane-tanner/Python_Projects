@@ -2,8 +2,8 @@ from art import logo, vs
 from game_data import data
 import random 
 from replit import clear
-print(logo)  
 
+print(logo) 
 score = 0
 is_true = True
 
@@ -14,7 +14,6 @@ def display_data(data_dict):
     name = data_dict['name']
     description = data_dict['description']
     country = data_dict['country']
-    follower_count = data_dict['follower_count']
     print(f"{name}, a {description}, from {country},")
                                                   
 
@@ -31,10 +30,12 @@ while is_true:
 
     if (guess == 'A' and A['follower_count'] > B['follower_count']) or (guess == 'B' and B['follower_count'] > A['follower_count']):
         clear()
+        print(logo)
         score += 1
         print(f"You're right! Current score: {score}")
     else:
         clear()
+        print(logo)
         print(f"Sorry, that's wrong. Final score: {score}")
         is_true = False
 
