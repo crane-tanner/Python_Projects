@@ -28,7 +28,7 @@ nr_numbers = int(input(f"How many numbers would you like?\n"))
 
 random_password = []
 for char in range(1, nr_letters+1):
-    random_password.append(random.choice(letters))
+    random_password.append(random.choice(letters)).upper()
 
 for char in range(1,nr_numbers +1):
     random_password.append(random.choice(numbers))
