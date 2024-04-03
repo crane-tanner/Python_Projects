@@ -50,6 +50,7 @@ elif player_choice == 1:
         print("It's a draw!")
     elif computer_choice == 0:
         print("Paper beats rock. You win!")
+
     else:
         print("Scissors beats paper. You lose!")
 

@@ -1,4 +1,4 @@
-class Car:
+class Car: # class is a blueprint for an object
     def __init__(self, make, model, year, color):
         self.make = make
         self.model = model
@@ -15,11 +15,11 @@ class Car:
 is_true = True
 
 while is_true:
-    car_1 = Car("Toyota", "Prius", 2015, "Green")
+    car_1 = Car("Toyota", "Prius", 2015, "Green")   # objects are instances of classes
     car_2 = Car("Ford", "Mustang", "2022", "Blue")
     car_3 = Car("Chevrolet", "Silverado", "2021", "White")
     car_4 = Car("Volkswagen", "Beetle", "2013", "Silver")
-    car_5 = Car("Toyota", "4runner", "2016", "Red")\
+    car_5 = Car("Toyota", "4runner", "2016", "Red")
 
     print("Car 1:", car_1.make, car_1.model,car_1.year, car_1.color)
     print("Car 2:", car_2.make, car_2.model, car_2.year, car_2.color)
