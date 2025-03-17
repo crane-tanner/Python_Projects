@@ -25,32 +25,41 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 print("Welcome to Treasure Island.")
 print("Your mission is to find the treasure.") 
 
+game_is_on = True
 
-direction = input("You find yourself at a crossroad, do you want to go left or right? choose l/r \n")
+while game_is_on:
 
-if direction == 'l': 
-    island = input("You are now at a lake with a mysterious island in the center. Do you swim or wait for a boat? Choose s/w. \n")
-    
-else: 
-    print("You fall into a hole. Game over!")
-    sys.exit()
-    
-if island == 'w':
-    print("You arrive safely at the island a come across a structure with three doors that are yellow, blue, and green. Choose y/b/g \n")
-    door = input("Which door do you enter?")
-else: 
-    print("You were eaten by swarm of killer fish. Game over!")
-    sys.exit()
-if(door == 'b'):
-    print("Congratulations! You have found the treasure.")
-    sys.exit()
-elif door == 'y':
-    print("You fall onto a bed of spikes. Ouch! Game over.")
-    sys.exit()
-elif door == 'g': 
-    print("You become engulfed in flames. An unfortunate ending! Game over.")
-    sys.exit()
-else: 
-    print("That wasn't one of the choices. Game over!")
-    sys.exit()
-    
+    direction = input("You find yourself at a crossroad, do you want to go left or right? choose l/r \n")
+
+    if direction == 'l':
+        island = input("You are now at a lake with a mysterious island in the center. Do you swim or wait for a boat? Choose s/w. \n")
+
+    else:
+        print("You fall into a hole. Game over!")
+        break
+
+    if island == 'w':
+        print("You arrive safely at the island a come across a structure with three doors that are yellow, blue, and green. Choose y/b/g \n")
+        door = input("Which door do you enter?")
+
+    else:
+        print("You were eaten by swarm of killer fish. Game over!")
+
+    if door == 'b':
+        print("Congratulations! You have found the treasure.")
+
+    elif door == 'y':
+        print("You fall onto a bed of spikes. Ouch! Game over.")
+
+    elif door == 'g':
+        print("You become engulfed in flames. An unfortunate ending! Game over.")
+
+    else:
+        print("That wasn't one of the choices. Game over!")
+
+    restart = input("Do you want to restart? y/n")
+
+    if restart == 'n':
+        sys.exit()
+
+
